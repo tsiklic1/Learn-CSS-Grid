@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  --purple: #6454a9;
+  --red: #f64c5d;
+}
+
+.grid {
+  width: 488px;
+  height: 488px;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid > div {
+  border-radius: 12px;
+}
+
+.item-background {
+  background-size: cover;
+}
+
+.item1 {
+  background-color: var(--red);
+}
+
+.item2 {
+  grid-column: span 2;
+  background-image: url(./assets/jere.png);
+}
+
+.item3 {
+  grid-column: span 2;
+  background-image: url(./assets/alex.png);
+}
+
+.item4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  background-image: url(./assets/marija.png);
+}
+
+.item5 {
+  background-image: url(./assets/mate.png);
+}
+
+.item6 {
+  background-color: var(--purple);
+}
